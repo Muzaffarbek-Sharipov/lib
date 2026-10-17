@@ -1208,7 +1208,7 @@ void logAndProcessOrder(int orderId) {
       throw ArgumentError('Order ID must be positive.');
     }
     print('Processing order #$orderId');
-  } catch (e, stackTrace) {
+  } catch (e) {
     print('[Audit Log] Failed processing order #$orderId: $e');
     rethrow;
   }
